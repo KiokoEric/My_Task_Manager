@@ -20,6 +20,10 @@
     font-size: 20px;
     font-weight: bold;
 }
+.homeIcon {
+    color: black;
+    margin-top: 0.5rem;
+}
 .createLink button {
     background-color: var(--Black);
     border: none;

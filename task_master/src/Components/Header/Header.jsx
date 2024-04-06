@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdEditNote } from "react-icons/md";
 import { IoMdAddCircle } from "react-icons/io";
-import { Link } from "react-router-dom"; 
+import { RiHome2Fill } from "react-icons/ri";
 import "../Header/Header.css";
 
 const Header = () => {
@@ -14,6 +14,11 @@ return (
                     <h1>Task Master</h1>
                 </figcaption>
             </figure>
+        </section>
+        <section>
+            <a href='/'>
+                <p><RiHome2Fill className='homeIcon' size="1.8rem" /></p>
+            </a>
         </section>
         <section>
             <a href='/Create' className='createLink'>
