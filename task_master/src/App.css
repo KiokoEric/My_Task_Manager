@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root {
+
+  /* COLORS */
+  --Black: #000000;
+  --Dark-Blue: #0B60B0;
+  --Light-Blue: #40A2E3;
+  --White: white;
+}
+body {
+  font-family: 'Instrument Serif', serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1550px;
+}
