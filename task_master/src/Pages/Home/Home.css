@@ -1,10 +1,98 @@
 .Home section:first-child {
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 1.5rem;
     padding: 0rem 1rem;
     width: 1540px;
 }
 .Home section:first-child h2 {
     font-size: 25px;
+}
+.Home section:last-child {
+    padding: 0rem 1rem;
+    width: 1540px;
+}
+.Home section:last-child ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+}
+.Home li {
+    border: 2px solid black;
+    border-radius: 3px;
+    color: black;
+    font-size: 18px;
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+    width: 450px;
+}
+.Home li h3 {
+    text-decoration: underline;
+}
+.Home li div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.Home li div span {
+    background-color: black;
+    border-radius: 4px;
+    color: blue;
+    font-size: 15px;
+    padding: 0.4rem;
+    text-align: center;
+    width: 100px;
+}
+.Home div figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+#Edit {
+    color: green;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+}   
+#Edit:hover::after {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    content: "Edit Task";
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    padding: 5px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 90px;
+    z-index: 1;
+}
+#Delete {
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+#Delete:hover::after {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    content: "Delete Task";
+    font-family: 'Instrument Serif', serif;
+    font-size: 17px;
+    padding: 5px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 90px;
+    z-index: 1;
 }

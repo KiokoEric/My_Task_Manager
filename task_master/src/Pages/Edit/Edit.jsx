@@ -1,17 +1,32 @@
-import React, { useState } from 'react';
-import { AiFillEdit } from "react-icons/ai";
-import { v4 as uuidv4 } from 'uuid'
+import React, { useEffect, useState } from 'react';
+import { FaEdit } from "react-icons/fa";
 import "../Create/Create.css";
 import { useAppContext } from '../../Components/Context/AppContext';
+import { useParams } from 'react-router-dom';
 
-const Create = () => {
+const Edit = () => {
 
-    const { addTodo } = useAppContext()
+    const { Todos, editTodo } = useAppContext()
     const [Title, setTitle] = useState("")
     const [Description, setDescription] = useState("")
     const [Date, setDate] = useState("")
     const [Priority, setPriority] = useState("")
     const [Success, setSuccess] = useState("")
+    const { id } = useParams()
+
+
+    useEffect(() => {
+
+        const getTodoById = () => {
+            const foundTodo = Todos.find(Todo => Todo.id === id);
+            setTitle(foundTodo.Title)
+            setDescription(foundTodo.Description)
+            setDate(foundTodo.Date)
+            setPriority(foundTodo.Priority)
+        };
+
+        getTodoById()
+    },[])
 
     const handleTitle = (e) => {
         setTitle(e.target.value)
@@ -29,19 +44,19 @@ const Create = () => {
         setPriority(e.target.value)
     }
 
-    const AddTask = (e) => {
+    const editTask = (e) => {
         e.preventDefault()
-        setSuccess("Task has been successfully created.")
-        addTodo({id: uuidv4(), Title: Title,Description: Description,Date: Date,Priority: Priority,Completed: false})
+        editTodo(id, { id, Title: Title,Description: Description,Date: Date,Priority: Priority,Completed: false})
+        setSuccess("Task has been successfully edited.")
     }
 
 return (
     <div className='Create' >
         <section>
-            <h2> <AiFillEdit size="1.5rem" /> Create Tasks</h2>
+            <h2> <FaEdit size="1.5rem" /> Edit Task</h2>
             <hr />
         </section>
-        <form onSubmit={AddTask} action="" method="get">
+        <form onSubmit={editTask} action="" method="get">
             <p>
                 <label htmlFor="Title">Title</label>
                 <input type="text" name="Title" id="Title" placeholder='Enter Title...' value={Title} onChange={handleTitle} />
@@ -64,10 +79,10 @@ return (
                 </select>
             </p>
             <p className='Green' >{Success}</p>
-            <button type="submit" onSubmit={AddTask} >Add New Task</button>
+            <button type="submit" onSubmit={editTask} >Edit Task</button>
         </form>
     </div>
 )
 }   
 
-export default Create
+export default Edit

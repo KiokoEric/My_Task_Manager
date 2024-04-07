@@ -1,8 +1,15 @@
 import React from 'react';
-import { FaNoteSticky } from "react-icons/fa6";
 import "../Home/Home.css";
+import { Link  } from 'react-router-dom';
+import { FaNoteSticky } from "react-icons/fa6";
+import { MdEditSquare } from "react-icons/md";
+import { MdDelete } from "react-icons/md";
+import { useAppContext } from '../../Components/Context/AppContext';
 
 const Home = () => {
+
+    const { Todos, removeTodo } = useAppContext()
+
 return (
     <div className='Home' >
         <section>
@@ -10,7 +17,25 @@ return (
             <hr />
         </section>
         <section>
-            
+            <ul>
+                {
+                Todos.map((Todo) => {
+                    return (
+                        <li key={Todo.id} >
+                            <h3>{Todo.Title}</h3>
+                            <p>{Todo.Description}</p>
+                            <div>
+                                <span>{Todo.Priority}  priority</span>
+                                <figure>
+                                    <Link to={`/${Todo.id}`} ><i class="fa-solid fa-pen-to-square" id='Edit' ></i></Link>
+                                    <i id='Delete' onClick={() => removeTodo(Todo.id)} class="fa-solid fa-trash"></i>
+                                </figure>
+                            </div>
+                        </li>
+                    )
+                })
+                }
+            </ul>
         </section>
     </div>
 )
