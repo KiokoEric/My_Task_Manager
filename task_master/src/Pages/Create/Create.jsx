@@ -31,8 +31,8 @@ const Create = () => {
 
     const AddTask = (e) => {
         e.preventDefault()
-        setSuccess("Task has been successfully created.")
-        addTodo({id: uuidv4(), Title: Title,Description: Description,Date: Date,Priority: Priority,Completed: false})
+            setSuccess("Task has been successfully created.")
+            addTodo({id: uuidv4(), Title: Title,Description: Description,Date: Date,Priority: Priority,Completed: false})
     }
 
 return (
@@ -44,19 +44,19 @@ return (
         <form onSubmit={AddTask} action="" method="get">
             <p>
                 <label htmlFor="Title">Title</label>
-                <input type="text" name="Title" id="Title" placeholder='Enter Title...' value={Title} onChange={handleTitle} />
+                <input type="text" name="Title" id="Title" placeholder='Enter Title...' value={Title} onChange={handleTitle} required />
             </p>
             <p>
                 <label htmlFor="Description">Description</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder='Enter Description...' value={Description} onChange={handleDescription} ></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder='Enter Description...' value={Description} onChange={handleDescription} required ></textarea>
             </p>
             <p>
                 <label htmlFor="Date">Due Date</label>
-                <input type="datetime-local" name="Date" id="Date" value={Date} onChange={handleDate} />
+                <input type="datetime-local" name="Date" id="Date" value={Date} onChange={handleDate} required />
             </p>
             <p>
                 <label htmlFor="Priority">Priority</label>
-                <select name="Priority" id="Priority" value={Priority} onChange={handlePriority} >
+                <select name="Priority" id="Priority" value={Priority} onChange={handlePriority} required >
                     <option value="">Select an option</option>
                     <option value="High">High</option>
                     <option value="Medium">Medium</option>

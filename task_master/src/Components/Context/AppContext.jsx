@@ -4,7 +4,6 @@ const AppContext = createContext();
 
 export const useAppContext = () => {
     const context = useContext(AppContext)
-
     return context
 }
 
@@ -24,7 +23,6 @@ const AppContextProvider = ({children}) => {
 
     const addTodo = (Todo) => {
         setTodos([...Todos, Todo])
-        console.log([...Todos, Todo])
     }
 
     const removeTodo = (id) => {
@@ -36,7 +34,6 @@ const AppContextProvider = ({children}) => {
     const editTodo = (id, EditedTodo) => {
         const EditedTask = Todos.map(Todo => (Todo.id === id ? EditedTodo : Todo));
         setTodos(EditedTask);
-        console.log(id)
     };
 
     useEffect(() => {

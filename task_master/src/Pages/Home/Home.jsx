@@ -2,8 +2,6 @@ import React from 'react';
 import "../Home/Home.css";
 import { Link  } from 'react-router-dom';
 import { FaNoteSticky } from "react-icons/fa6";
-import { MdEditSquare } from "react-icons/md";
-import { MdDelete } from "react-icons/md";
 import { useAppContext } from '../../Components/Context/AppContext';
 
 const Home = () => {
