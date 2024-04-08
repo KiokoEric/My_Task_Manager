@@ -21,11 +21,12 @@ return (
                 {
                 Todos.map((Todo) => {
                     return (
-                        <li key={Todo.id} >
+                        <li className='Todo' key={Todo.id} >
                             <h3>{Todo.Title}</h3>
                             <p>{Todo.Description}</p>
                             <div>
                                 <span>{Todo.Priority}  priority</span>
+                                <p>Due Date:<input type="datetime-local" name="" value={Todo.Date} id="" readOnly /></p>
                                 <figure>
                                     <Link to={`/${Todo.id}`} ><i class="fa-solid fa-pen-to-square" id='Edit' ></i></Link>
                                     <i id='Delete' onClick={() => removeTodo(Todo.id)} class="fa-solid fa-trash"></i>

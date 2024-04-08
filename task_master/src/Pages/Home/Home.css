@@ -5,28 +5,33 @@
     justify-content: center;
     margin-bottom: 1.5rem;
     padding: 0rem 1rem;
-    width: 1540px;
+    width: 1450px;
 }
 .Home section:first-child h2 {
     font-size: 25px;
 }
 .Home section:last-child {
-    padding: 0rem 1rem;
-    width: 1540px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1450px;
 }
 .Home section:last-child ul {
     display: flex;
     flex-direction: row;
-    column-gap: 1.5rem;
+    column-gap: 1rem;
 }
 .Home li {
+    background-color: rgb(250, 215, 162);
     border: 2px solid black;
     border-radius: 3px;
+    box-shadow: 5px 5px 2px rgb(65, 64, 64);
     color: black;
     font-size: 18px;
     list-style-type: none;
-    padding: 0.5rem 1rem;
-    width: 450px;
+    padding: 0.5rem 0.5rem;
+    width: 460px;
 }
 .Home li h3 {
     text-decoration: underline;
@@ -38,13 +43,22 @@
     margin-top: 1rem;
 }
 .Home li div span {
-    background-color: black;
+    background-color: rgb(31, 30, 30);
     border-radius: 4px;
-    color: blue;
-    font-size: 15px;
+    color: #068FFF;
+    font-size: 16px;
     padding: 0.4rem;
     text-align: center;
-    width: 100px;
+    width: 120px;
+}
+.Home input {
+    background-color: inherit;
+    border: none;
+}
+.Home input[type="datetime-local"] {
+    font-family: 'Instrument Serif', serif;
+    font-size: 17px;
+    padding-left: 0.65rem;
 }
 .Home div figure {
     display: flex;
@@ -64,7 +78,7 @@
     color: white;
     content: "Edit Task";
     font-family: 'Instrument Serif', serif;
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px;
     position: absolute;
     top: 130%;
@@ -86,7 +100,7 @@
     color: white;
     content: "Delete Task";
     font-family: 'Instrument Serif', serif;
-    font-size: 17px;
+    font-size: 16px;
     padding: 5px;
     position: absolute;
     top: 130%;
