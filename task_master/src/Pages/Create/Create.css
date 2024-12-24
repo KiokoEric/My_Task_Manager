@@ -44,6 +44,7 @@
     padding-left: 0.65rem;
 }
 .CreateTask input[type="datetime-local"] {
+    color: black;
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
     padding-left: 0.65rem;
