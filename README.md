@@ -6,7 +6,7 @@
     
   <br><br>
   
-The website application was built using React JS and Javascript
+The website application was built using React JS.
 
 
 </div>
