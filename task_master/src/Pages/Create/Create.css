@@ -50,7 +50,7 @@
     padding-left: 0.65rem;
 }
 .CreateTask input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-    color: red;
+    filter: invert(50%) black(100%) saturate(300%) hue-rotate(180deg);
 }
 .CreateTask textarea {
     background-color: white;
