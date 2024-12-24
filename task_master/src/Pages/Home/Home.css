@@ -58,6 +58,7 @@
     border: none;
 }
 .Home input[type="datetime-local"] {
+    color: black;
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
     padding-left: 0.15rem;
