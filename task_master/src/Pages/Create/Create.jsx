@@ -1,7 +1,7 @@
+import "../Create/Create.css";
+import { v4 as uuidv4 } from 'uuid';
 import React, { useState } from 'react';
 import { AiFillEdit } from "react-icons/ai";
-import { v4 as uuidv4 } from 'uuid'
-import "../Create/Create.css";
 import { useAppContext } from '../../Components/Context/AppContext';
 
 const Create = () => {

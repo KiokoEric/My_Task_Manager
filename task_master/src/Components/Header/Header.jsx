@@ -1,8 +1,8 @@
 import React from 'react';
-import { MdEditNote } from "react-icons/md";
-import { IoMdAddCircle } from "react-icons/io";
-import { RiHome2Fill } from "react-icons/ri";
 import "../Header/Header.css";
+import { MdEditNote } from "react-icons/md";
+import { RiHome2Fill } from "react-icons/ri";
+import { IoMdAddCircle } from "react-icons/io";
 
 const Header = () => {
 return (

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { FaEdit } from "react-icons/fa";
 import "../Create/Create.css";
-import { useAppContext } from '../../Components/Context/AppContext';
+import { FaEdit } from "react-icons/fa";
 import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useAppContext } from '../../Components/Context/AppContext';
 
 const Edit = () => {
 
