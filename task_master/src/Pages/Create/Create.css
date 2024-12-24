@@ -26,6 +26,7 @@
     font-weight: bold;
 }
 .CreateTask input {
+    background-color: white;
     border: none;
     border-bottom: 2px solid black;
     font-family: 'Instrument Serif', serif;
@@ -45,6 +46,7 @@
     padding-left: 0.65rem;
 }
 .CreateTask textarea {
+    background-color: white;
     border: none;
     border-bottom: 2px solid black;
     font-family: 'Instrument Serif', serif;
@@ -55,6 +57,7 @@
     width: 450px;
 }
 .CreateTask select {
+    background-color: white;
     border: none;
     border-bottom: 2px solid black;
     font-family: 'Instrument Serif', serif;
