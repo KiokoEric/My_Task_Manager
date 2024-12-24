@@ -36,7 +36,7 @@ const Create = () => {
     }
 
 return (
-    <div className='CreateTask'>
+    <div className='Create'>
         <section>
             <h2> <AiFillEdit size="1.5rem" /> Create Tasks</h2>
             <hr />
@@ -63,7 +63,7 @@ return (
                     <option value="Low">Low</option>
                 </select>
             </p>
-            <p id='Green'>{Success}</p>
+            <h4>{Success}</h4>
             <button type="submit" onSubmit={AddTask} >Add New Task</button>
         </form>
     </div>

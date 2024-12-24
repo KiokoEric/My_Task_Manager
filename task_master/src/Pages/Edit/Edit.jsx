@@ -49,7 +49,7 @@ const Edit = () => {
     }
 
 return (
-    <div className='CreateTask'>
+    <div className='Create'>
         <section>
             <h2> <FaEdit size="1.5rem" /> Edit Task</h2>
             <hr />
@@ -76,7 +76,7 @@ return (
                     <option value="Low">Low</option>
                 </select>
             </p>
-            <p className='Green'>{Success}</p>
+            <h4>{Success}</h4>
             <button type="submit" onSubmit={editTask} >Edit Task</button>
         </form>
     </div>
