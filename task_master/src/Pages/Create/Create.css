@@ -19,6 +19,7 @@
     margin-top: 1.5rem;
 }
 .CreateTask form p {
+    color: black;
     display: flex;
     flex-direction: column;
 }
@@ -30,6 +31,7 @@
     background-color: white;
     border: none;
     border-bottom: 2px solid black;
+    color: black;
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
     height: 40px;
@@ -50,6 +52,7 @@
     background-color: white;
     border: none;
     border-bottom: 2px solid black;
+    color: black;
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
     height: 120px;
@@ -61,6 +64,7 @@
     background-color: white;
     border: none;
     border-bottom: 2px solid black;
+    color: black;
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
     outline: 0;
