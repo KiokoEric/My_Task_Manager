@@ -18,7 +18,7 @@
     align-items: center;
     margin-top: 1.5rem;
 }
-.CreateTask form p {
+.CreateTask form {
     color: black;
     display: flex;
     flex-direction: column;
