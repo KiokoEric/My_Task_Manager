@@ -36,7 +36,7 @@ const Create = () => {
     }
 
 return (
-    <div className='Create' >
+    <div className='Create'>
         <section>
             <h2> <AiFillEdit size="1.5rem" /> Create Tasks</h2>
             <hr />
