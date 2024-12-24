@@ -12,16 +12,12 @@
     min-width: 1450px;
 }
 .CreateTask form {
+    color: black;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     align-items: center;
     margin-top: 1.5rem;
-}
-.CreateTask form {
-    color: black;
-    display: flex;
-    flex-direction: column;
 }
 .CreateTask form label {
     color: black;
@@ -84,6 +80,6 @@
     margin-bottom: 1rem;
     width: 250px;
 }
-.CreateTask #Green {
+#Green {
     color: green;
 }
