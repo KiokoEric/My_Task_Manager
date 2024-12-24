@@ -51,7 +51,7 @@ const Edit = () => {
     }
 
 return (
-    <div className='Create' >
+    <div className='CreateTask' >
         <section>
             <h2> <FaEdit size="1.5rem" /> Edit Task</h2>
             <hr />

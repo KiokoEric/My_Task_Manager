@@ -1,31 +1,31 @@
-.Create {
+.CreateTask {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.Create section:first-child {
+.CreateTask section:first-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0rem 1rem;
     min-width: 1450px;
 }
-.Create form {
+.CreateTask form {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     align-items: center;
     margin-top: 1.5rem;
 }
-.Create form p {
+.CreateTask form p {
     display: flex;
     flex-direction: column;
 }
-.Create form label {
+.CreateTask form label {
     font-weight: bold;
 }
-.Create input {
+.CreateTask input {
     border: none;
     border-bottom: 2px solid black;
     font-family: 'Instrument Serif', serif;
@@ -34,17 +34,17 @@
     outline: 0;
     width: 450px;
 }
-.Create input[type="text"] {
+.CreateTask input[type="text"] {
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
     padding-left: 0.65rem;
 }
-.Create input[type="datetime-local"] {
+.CreateTask input[type="datetime-local"] {
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
     padding-left: 0.65rem;
 }
-.Create textarea {
+.CreateTask textarea {
     border: none;
     border-bottom: 2px solid black;
     font-family: 'Instrument Serif', serif;
@@ -54,7 +54,7 @@
     padding: 0.5rem;
     width: 450px;
 }
-.Create select {
+.CreateTask select {
     border: none;
     border-bottom: 2px solid black;
     font-family: 'Instrument Serif', serif;
@@ -63,7 +63,7 @@
     padding: 0.5rem;
     width: 450px;
 }
-.Create button {
+.CreateTask button {
     background-color: var(--Black);
     border-radius: 5px;
     border: none;

@@ -2,16 +2,16 @@ import "../Create/Create.css";
 import { v4 as uuidv4 } from 'uuid';
 import React, { useState } from 'react';
 import { AiFillEdit } from "react-icons/ai";
-// import { useAppContext } from '../../Components/Context/AppContext';
+import { useAppContext } from '../../Components/Context/AppContext';
 
 const Create = () => {
 
-    // const { addTodo } = useAppContext()
-    const [Title, setTitle] = useState("")
-    const [Description, setDescription] = useState("")
+    const { addTodo } = useAppContext()
     const [Date, setDate] = useState("")
-    const [Priority, setPriority] = useState("")
+    const [Title, setTitle] = useState("")
     const [Success, setSuccess] = useState("")
+    const [Priority, setPriority] = useState("")
+    const [Description, setDescription] = useState("")
 
     const handleTitle = (e) => {
         setTitle(e.target.value)
@@ -36,7 +36,7 @@ const Create = () => {
     }
 
 return (
-    <div className='Create'>
+    <div className='CreateTask'>
         <section>
             <h2> <AiFillEdit size="1.5rem" /> Create Tasks</h2>
             <hr />
