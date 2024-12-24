@@ -9,7 +9,7 @@ const Home = () => {
     const { Todos, removeTodo } = useAppContext()
 
 return (
-    <div className='Home' >
+    <div className='Home'>
         <section>
             <h2> <FaNoteSticky size="1.5rem" /> Created Tasks</h2>
             <hr />

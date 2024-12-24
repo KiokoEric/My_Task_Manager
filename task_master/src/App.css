@@ -9,14 +9,6 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-:root {
-
-  /* COLORS */
-  --Black: #000000;
-  --Dark-Blue: #0B60B0;
-  --Light-Blue: #40A2E3;
-  --White: white;
-}
 body {
   background-color: white;
   font-family: 'Instrument Serif', serif;
@@ -25,10 +17,4 @@ body {
   flex-direction: column;
   align-items: center;
   margin: auto;;
-}
-.Green {
-  color: green;
-}
-.Red {
-  color: red;
 }

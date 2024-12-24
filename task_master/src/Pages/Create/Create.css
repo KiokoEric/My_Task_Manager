@@ -76,7 +76,7 @@
     width: 450px;
 }
 .CreateTask button {
-    background-color: var(--Black);
+    background-color: black;
     border-radius: 5px;
     border: none;
     color: white;
@@ -84,6 +84,6 @@
     margin-bottom: 1rem;
     width: 250px;
 }
-.CreateTask p .Green {
+.CreateTask #Green {
     color: green;
 }
