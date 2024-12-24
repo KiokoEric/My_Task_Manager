@@ -6,25 +6,23 @@ import { useAppContext } from '../../Components/Context/AppContext';
 
 const Edit = () => {
 
-    const { Todos, editTodo } = useAppContext()
-    const [Title, setTitle] = useState("")
-    const [Description, setDescription] = useState("")
-    const [Date, setDate] = useState("")
-    const [Priority, setPriority] = useState("")
-    const [Success, setSuccess] = useState("")
     const { id } = useParams()
-
+    const [Date, setDate] = useState("")
+    const [Title, setTitle] = useState("")
+    const [Success, setSuccess] = useState("")
+    const { Todos, editTodo } = useAppContext()
+    const [Priority, setPriority] = useState("")
+    const [Description, setDescription] = useState("")    
 
     useEffect(() => {
 
         const getTodoById = () => {
             const foundTodo = Todos.find(Todo => Todo.id === id);
-            setTitle(foundTodo.Title)
-            setDescription(foundTodo.Description)
             setDate(foundTodo.Date)
+            setTitle(foundTodo.Title)
             setPriority(foundTodo.Priority)
+            setDescription(foundTodo.Description)
         };
-
         getTodoById()
     },[])
 
@@ -51,7 +49,7 @@ const Edit = () => {
     }
 
 return (
-    <div className='CreateTask' >
+    <div className='CreateTask'>
         <section>
             <h2> <FaEdit size="1.5rem" /> Edit Task</h2>
             <hr />

@@ -1,5 +1,6 @@
 import React from 'react';
 import "../Header/Header.css";
+import { Link  } from 'react-router-dom';
 import { MdEditNote } from "react-icons/md";
 import { RiHome2Fill } from "react-icons/ri";
 import { IoMdAddCircle } from "react-icons/io";
@@ -17,14 +18,14 @@ return (
                 </figure>
             </section>
             <section>
-                <a href='/'>
+                <Link to='/'>
                     <p><RiHome2Fill className='homeIcon' size="1.8rem" /></p>
-                </a>
+                </Link>
             </section>
             <section>
-                <a href='/Create' className='createLink'>
+                <Link to='/Create' className='createLink'>
                     <button> <IoMdAddCircle size="1.5rem" /> Add New Task</button>
-                </a>
+                </Link>
             </section>
         </div>
     </div>
