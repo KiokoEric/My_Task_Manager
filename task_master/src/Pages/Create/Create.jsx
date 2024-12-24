@@ -63,7 +63,7 @@ return (
                     <option value="Low">Low</option>
                 </select>
             </p>
-            <p className='Green' >{Success}</p>
+            <p className='Green'>{Success}</p>
             <button type="submit" onSubmit={AddTask} >Add New Task</button>
         </form>
     </div>

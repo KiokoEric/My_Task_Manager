@@ -46,7 +46,8 @@
 .Home li div span {
     background-color: rgb(31, 30, 30);
     border-radius: 4px;
-    color: #068FFF;
+    color: #0d8cf3;
+    font-weight: bold;
     font-size: 16px;
     padding: 0.4rem;
     text-align: center;
@@ -59,7 +60,7 @@
 .Home input[type="datetime-local"] {
     font-family: 'Instrument Serif', serif;
     font-size: 17px;
-    padding-left: 0.65rem;
+    padding-left: 0.15rem;
 }
 .Home div figure {
     display: flex;
