@@ -23,6 +23,7 @@
     flex-direction: column;
 }
 .CreateTask form label {
+    color: black;
     font-weight: bold;
 }
 .CreateTask input {
